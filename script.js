@@ -3,29 +3,28 @@ window.onload = tweet();
 function tweet() {
     var button = document.getElementsByTagName('button')[0];
     var tweetText = document.getElementsByTagName('textarea')[0];
-    var message = tweetText.value;
 
-    tweetText.addEventListener('input', countCharacters);
+    tweetText.addEventListener('input', characters);
     tweetText.addEventListener('input', addTextAreaRows);
-    button.addEventListener('click', addMessageToFeed);
+    button.addEventListener('click', messageFeed);
 }
 
-function countCharacters() {
-    var button = document.getElementsByTagName('button')[0];
-    var message = document.getElementsByTagName('textarea')[0].value;
-    var leftCharacters = 140 - message.length;
+function characters() {
+    button = document.getElementsByTagName('button')[0];
+    var msg = document.getElementsByTagName('textarea')[0].value;
+    var limitCharacters = 140 - msg.length;
     var counter = document.getElementById('counter');
-    counter.innerHTML = leftCharacters;
+    counter.innerHTML = limitCharacters;
 
-    if (message.length > 0 && message.trim() !== '' && message.length <= 140) {
+    if (msg.length > 0 && msg.trim() !== '' && msg.length <= 140) {
         button.disabled = false;
     } else {
         button.disabled = true;
     }
 
-    if (leftCharacters < 10) {
+    if (limitCharacters < 10) {
         counter.setAttribute('class', 'color3');
-    } else if (leftCharacters < 20) {
+    } else if (limitCharacters < 20) {
         counter.setAttribute('class', 'color2');
     } else {
         counter.setAttribute('class', 'color1');
@@ -33,18 +32,18 @@ function countCharacters() {
 }
 
 function addTextAreaRows() {
-    var tweetText = document.getElementsByTagName('textarea')[0];
+    tweetText = document.getElementsByTagName('textarea')[0];
     tweetText.style.height = '45px';
     tweetText.style.height = tweetText.scrollHeight + 'px';
 }
 
-function addMessageToFeed() {
-    var tweetText = document.getElementsByTagName('textarea')[0];
-    var message = tweetText.value;
+function messageFeed() {
+    tweetText = document.getElementsByTagName('textarea')[0];
+    msg = tweetText.value;
 
     var tweetMessage = document.createElement('p');
-    tweetMessage.className = 'message';
-    tweetMessage.textContent = message;
+    tweetMessage.className = 'msg';
+    tweetMessage.textContent = msg;
 
     var dateInfo = addDate();
 
