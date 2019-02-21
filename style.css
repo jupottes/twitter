@@ -1,155 +1,145 @@
 body {
-    margin: 0;
-    background-color: #cce5f5;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+  margin: 0;
+  background-color: #cce5f5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
   
-  img {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin: 15px 10px 0 20px;
-  }
+img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 15px 10px 0 20px;
+}
   
-  /*PROFILE*/
-  .profile{
-      color: #1DA1F2;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 0;
-      width: 25%;
-      margin: 12px 10px 12px 28px;
-      text-align: left;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-end;
-    }
+.profile{
+  color: #1DA1F2;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  width: 25%;
+  margin: 12px 10px 12px 28px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
   
-  /*FORMULARIO*/
-  .form {
-      width: 70%;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 40%;
-      margin: 10px 0 12px 6px;
-    }
+.form {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 10px 0 12px 6px;
+}
   
-  /*TEXTO PARA TWITTAR*/
-  textarea {
-    width: 100%;
-    margin: 0;
-    padding: 0 5px;
-    outline: none;
-    resize: none;
-    border: 2px solid #64b6ec;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 53px;
-    font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  outline: none;
+  resize: none;
+  border: 2px solid #64b6ec;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 53px;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
   
+button {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(19, 150, 231);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 5px 15px;
+}
   
-  /*BOTÃO*/
+button:hover {
+  background-color: #1f86c7;
+}
+
+button:disabled {
+  background-color: #6a9ebe;
+  cursor: no-drop;
+  color: #f2f2f2;
+}
   
-  button {
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
-    border: none;
-    border-radius: 30px;
-    background-color: rgb(19, 150, 231);
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-    padding: 5px 15px;
-  }
+#counter {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  padding: 0 10px;
+}
   
-  /*CURSOR SOBRE O BOTÃO*/
-  button:hover {
-    background-color: #1f86c7;
-  }
-  /*BOTÃO DESABILITADO*/
-  button:disabled {
-    background-color: #6a9ebe;
-    cursor: no-drop;
-    color: #f2f2f2;
-  }
+.color1 {
+  color: #1DA1F2;
+}
   
-  /*CONTADOR*/
+.color2 {
+  color: orange
+}
   
-  #counter {
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
-    padding: 0 10px;
-  }
+.color3 {
+  color: red;
+}
   
-  .color1 {
-    color: #1DA1F2;
-  }
+.feed {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tweet {
+  width: 100%;
+  border-top: 1px solid #cfcfcf;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.avatar-feed {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  float: left;
+}
   
-  .color2 {
-    color: rgb(194, 194, 67);
-  }
-  
-  .color3 {
-    color: rgb(128, 26, 26);
-  }
-  
-  
-  /*FEED*/
-  .feed {
-      background-color: #fff;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-    }
-  /*ÁREA DO TWEET NO FEED*/
-  .tweet {
-      width: 100%;
-      border-top: 1px solid #cfcfcf;
-      font-size: 14px;
-      padding: 15px 0;
-    }
-  /*FOTO*/
-  .avatar-feed {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    float: left;
-  }
-  /*USERNAME NO FEED*/
-  .username-feed {
-    height: 25px;
-    margin: 10px 5px 0 0;
-    font-size: 14px;
-    color: #575757;
-  }
-  /*NOME NO FEED*/
-  .name-feed {
-    font-size: 14px;
-    font-weight: bold;
-    height: 25px;
-    margin: 10px 5px 0 0;
-    color: #575757;
-  }
-  /*DATA*/
-  .date{
-      color: #696969;
-      font-weight: normal;
-  }
-  /*MENSAGEM NO FEED*/
-  .message {
-    width: 85%;
-    float: left;
-    margin: 3px 0 0 0;
-    color: rgb(24, 23, 23);
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.username-feed {
+  height: 25px;
+  margin: 10px 5px 0 0;
+  font-size: 14px;
+  color: #575757;
+}
+ 
+.name-feed {
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 10px 5px 0 0;
+  color: #575757;
+}
+
+.date{
+  color: #696969;
+  font-weight: normal;
+}
+ 
+.message {
+  width: 85%;
+  float: left;
+  margin: 3px 0 0 0;
+  color: rgb(24, 23, 23);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
   
   
