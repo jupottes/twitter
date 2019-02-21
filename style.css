@@ -1,0 +1,124 @@
+/*TWITTER*/
+
+/*menu superior*/
+body{
+    background-color: #e6ecf0;
+}
+
+.menu-top{
+    background-color: white;
+    padding:10px;
+    margin:0px;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul li a{
+    padding: 2px 10px;
+    display: inline-block;
+    color: #1DA1F2;;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.home a{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/*Seção FORMULÁRIO*/
+.twittar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Alinhamento caixa de texto e contador*/
+.twittar-text{
+    background-color: #CCE5F5;
+    padding-top: 15px;
+    width: 600px;
+    border: 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Alinhamento ícones e botão*/
+.twittar-itens{
+    background-color: #CCE5F5;
+    padding-top: 2px;
+    width: 600px;
+    border: 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Alinhamento dos ícones*/
+.icons-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+/*Formatação Caixa de texto*/
+#tweetText{
+    width: 300px;
+    border-radius: 10px;
+}
+
+/*Formatação dos ícones*/
+.icons{
+    color: #1DA1F2;
+}
+
+/*Botão Tweet*/
+.button{
+    background-color: #1DA1F2;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 17px;
+    border-radius: 7px;
+    margin: 20px 0px;
+    width: 80px;
+}
+
+/*Área print post*/
+
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#print-post{
+    border: 0px solid #000;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    width: 600px;
+    height: 80px;
+    color: black;
+}
