@@ -1,124 +1,155 @@
-/*TWITTER*/
-
-/*menu superior*/
-body{
-    background-color: #e6ecf0;
-}
-
-.menu-top{
-    background-color: white;
-    padding:10px;
-    margin:0px;
-    list-style:none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu ul li{
-    display: inline;
-}
-
-.menu{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu ul li a{
-    padding: 2px 10px;
-    display: inline-block;
-    color: #1DA1F2;;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.home a{
-    font-size: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-}
-
-/*Seção FORMULÁRIO*/
-.twittar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Alinhamento caixa de texto e contador*/
-.twittar-text{
-    background-color: #CCE5F5;
-    padding-top: 15px;
-    width: 600px;
-    border: 2px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Alinhamento ícones e botão*/
-.twittar-itens{
-    background-color: #CCE5F5;
-    padding-top: 2px;
-    width: 600px;
-    border: 2px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*Alinhamento dos ícones*/
-.icons-menu{
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-}
-
-/*Formatação Caixa de texto*/
-#tweetText{
-    width: 300px;
+body {
+    margin: 0;
+    background-color: #cce5f5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 15px 10px 0 20px;
+  }
+  
+  /*PROFILE*/
+  .profile{
+      color: #1DA1F2;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0;
+      width: 25%;
+      margin: 12px 10px 12px 28px;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+  
+  /*FORMULARIO*/
+  .form {
+      width: 70%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 40%;
+      margin: 10px 0 12px 6px;
+    }
+  
+  /*TEXTO PARA TWITTAR*/
+  textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
+    outline: none;
+    resize: none;
+    border: 2px solid #64b6ec;
     border-radius: 10px;
-}
-
-/*Formatação dos ícones*/
-.icons{
-    color: #1DA1F2;
-}
-
-/*Botão Tweet*/
-.button{
-    background-color: #1DA1F2;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 17px;
-    border-radius: 7px;
-    margin: 20px 0px;
-    width: 80px;
-}
-
-/*Área print post*/
-
-.post{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#print-post{
-    border: 0px solid #000;
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    background-color: white;
+    overflow: hidden;
+    height: 53px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  /*BOTÃO*/
+  
+  button {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
-    margin-bottom: 200px;
-    width: 600px;
-    height: 80px;
-    color: black;
-}
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(19, 150, 231);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 15px;
+  }
+  
+  /*CURSOR SOBRE O BOTÃO*/
+  button:hover {
+    background-color: #1f86c7;
+  }
+  /*BOTÃO DESABILITADO*/
+  button:disabled {
+    background-color: #6a9ebe;
+    cursor: no-drop;
+    color: #f2f2f2;
+  }
+  
+  /*CONTADOR*/
+  
+  #counter {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  
+  .color1 {
+    color: #1DA1F2;
+  }
+  
+  .color2 {
+    color: rgb(194, 194, 67);
+  }
+  
+  .color3 {
+    color: rgb(128, 26, 26);
+  }
+  
+  
+  /*FEED*/
+  .feed {
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  /*ÁREA DO TWEET NO FEED*/
+  .tweet {
+      width: 100%;
+      border-top: 1px solid #cfcfcf;
+      font-size: 14px;
+      padding: 15px 0;
+    }
+  /*FOTO*/
+  .avatar-feed {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    float: left;
+  }
+  /*USERNAME NO FEED*/
+  .username-feed {
+    height: 25px;
+    margin: 10px 5px 0 0;
+    font-size: 14px;
+    color: #575757;
+  }
+  /*NOME NO FEED*/
+  .name-feed {
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    margin: 10px 5px 0 0;
+    color: #575757;
+  }
+  /*DATA*/
+  .date{
+      color: #696969;
+      font-weight: normal;
+  }
+  /*MENSAGEM NO FEED*/
+  .message {
+    width: 85%;
+    float: left;
+    margin: 3px 0 0 0;
+    color: rgb(24, 23, 23);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
